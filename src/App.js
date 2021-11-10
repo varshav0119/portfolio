@@ -1,56 +1,45 @@
-import React from 'react';
-import { useEffect, useState } from 'react';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import "./App.css";
+import Main from "./containers/Main";
+import { ThemeProvider } from "styled-components";
+import { themes } from "./theme";
+import { GlobalStyles } from "./global";
+import { CursorProvider } from "react-cursor-custom";
+import { settings } from "./portfolio";
+import ReactGA from "react-ga";
 
 function App() {
-  const [date, setDate] = useState(null);
   useEffect(() => {
-    async function getDate() {
-      const res = await fetch('/api/date');
-      const newDate = await res.text();
-      setDate(newDate);
+    if (settings.googleTrackingID) {
+      ReactGA.initialize(settings.googleTrackingID, {
+        testMode: process.env.NODE_ENV === "test",
+      });
+      ReactGA.pageview(window.location.pathname + window.location.search);
     }
-    getDate();
   }, []);
+
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
+  const useCursor = settings.useCustomCursor;
+
   return (
-    <main>
-      <h1>Create React App + Go API</h1>
-      <h2>
-        Deployed with{' '}
-        <a
-          href="https://vercel.com/docs"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          Vercel
-        </a>
-        !
-      </h2>
-      <p>
-        <a
-          href="https://github.com/vercel/vercel/tree/main/examples/create-react-app"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          This project
-        </a>{' '}
-        was bootstrapped with{' '}
-        <a href="https://facebook.github.io/create-react-app/">
-          Create React App
-        </a>{' '}
-        and contains three directories, <code>/public</code> for static assets,{' '}
-        <code>/src</code> for components and content, and <code>/api</code>{' '}
-        which contains a serverless <a href="https://golang.org/">Go</a>{' '}
-        function. See{' '}
-        <a href="/api/date">
-          <code>api/date</code> for the Date API with Go
-        </a>
-        .
-      </p>
-      <br />
-      <h2>The date according to Go is:</h2>
-      <p>{date ? date : 'Loading date...'}</p>
-    </main>
+    <ThemeProvider theme={themes[theme]}>
+      <>
+        <GlobalStyles />
+        <div>
+          {useCursor ? (
+            <CursorProvider
+              color={themes[theme].secondaryText}
+              ringSize={25}
+              transitionTime={75}
+            >
+              <Main theme={themes[theme]} setTheme={setTheme} />
+            </CursorProvider>
+          ) : (
+            <Main theme={themes[theme]} setTheme={setTheme} />
+          )}
+        </div>
+      </>
+    </ThemeProvider>
   );
 }
 
