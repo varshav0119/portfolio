@@ -33,10 +33,10 @@ export default function Greeting(props) {
             </div>
           </div>
           <div className="greeting-image-div">
-          <img
-            alt=""
-            src={require("../../assets/images/varsha.jpg")}
-          ></img>
+            <img
+              alt=""
+              src={require("../../assets/images/varsha.jpg")}
+            ></img>
           </div>
         </div>
       </div>
