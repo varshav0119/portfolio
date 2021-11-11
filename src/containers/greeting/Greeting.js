@@ -10,16 +10,24 @@ export default function Greeting(props) {
         <div className="greeting-main">
           <div className="greeting-text-div">
             <div>
-              <h1 className="greeting-text">{greeting.title}</h1>
+              <p className="greeting-text">
+                {greeting.title} 
+                <span> I'm </span>
+                <span style={{ color: theme.accentColor }}>
+                  {greeting.full_name}.{" "}
+                </span>
+              </p>
               <p
                 className="greeting-text-p subTitle"
                 style={{ color: theme.secondaryText }}
               >
-                <span>I'm </span>
+                I am excited about tech that is 
                 <span style={{ color: theme.accentColor }}>
-                  {greeting.full_name}.{" "}
-                </span>
-                {greeting.subTitle}
+                  {" inclusive"}
+                </span> and
+                <span style={{ color: theme.accentColor }}>
+                  {" impactful"}
+                </span>. <br/>
                 {greeting.misc}
               </p>
             </div>
