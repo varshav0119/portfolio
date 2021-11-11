@@ -9,16 +9,17 @@ const settings = {
 
 //Home Page
 const greeting = {
-  title: "Hey!",
+  title: "Hello!",
   title2: "Varsha",
   logo_name: "Varsha",
   nickname: "Varsha",
-  full_name: "Varsha Venkatasubramanian",
+  full_name: "Varsha",
   subTitle:
-    "Full Stack Developer, Open Source Enthusiast 🔥. Always learning.",
+    "I am passionate about inclusive and impactful tech.",
+  misc: " The world is an exciting place. Some of my favourite things are 🏀🎮☕️🌧️!",
   resumeLink:
-    "https://docs.google.com/document/d/1A_jWRG74Rst427tg1izLa6vRXclS9_9F856jWJPJlDY/edit?usp=sharing",
-  mail: "mailto:hkanani191@gmail.com",
+    "",
+  mail: "mailto:varshav0119@gmail.com",
 };
 
 const socialMediaLinks = {
