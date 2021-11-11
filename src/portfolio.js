@@ -14,9 +14,7 @@ const greeting = {
   logo_name: "Varsha",
   nickname: "Varsha",
   full_name: "Varsha",
-  subTitle:
-    "I am passionate about inclusive and impactful tech.",
-  misc: " The world is an exciting place. Some of my favourite things are 🏀🎮☕️🌧️!",
+  misc: " I enjoy coffee ☕, rainy weather ☔, and epic fantasy 📚.",
   resumeLink:
     "",
   mail: "mailto:varshav0119@gmail.com",
