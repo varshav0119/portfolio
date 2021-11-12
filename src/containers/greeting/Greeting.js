@@ -18,7 +18,7 @@ export default function Greeting(props) {
                 </span>
               </p>
               <p
-                className="greeting-text-p subTitle"
+                className="greeting-text-p"
                 style={{ color: theme.secondaryText }}
               >
                 I am excited about tech that is 
@@ -33,7 +33,7 @@ export default function Greeting(props) {
             </div>
           </div>
           <div className="greeting-image-div">
-            <img
+            <img className="greeting-image"
               alt=""
               src={require("../../assets/images/varsha.jpg")}
             ></img>

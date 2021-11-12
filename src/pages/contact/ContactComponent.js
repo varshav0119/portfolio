@@ -1,13 +1,11 @@
 import React from "react";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
-import SocialMedia from "../../components/socialMedia/SocialMedia";
 import BlogsImg from "./BlogsImg";
 import "./ContactComponent.css";
-import { greeting, contactPageData } from "../../portfolio.js";
+import { contactPageData } from "../../portfolio.js";
 import { style } from "glamor";
 
-const ContactData = contactPageData.contactSection;
 const blogSection = contactPageData.blogSection;
 
 function Contact(props) {
@@ -21,38 +19,9 @@ function Contact(props) {
   });
 
   return (
-    <div className="contact-main">
+    <>
       <Header theme={theme} setTheme={props.setTheme} />
-      <div className="basic-contact">
-          <div className="contact-heading-div">
-            <div className="contact-heading-img-div">
-              <img
-                className="profile-pic"
-                src={require(`../../assets/images/${ContactData["profile_image_path"]}`)}
-                alt=""
-              />
-            </div>
-            <div className="contact-heading-text-div">
-              <h1
-                className="contact-heading-text"
-                style={{ color: theme.text }}
-              >
-                {ContactData["title"]}
-              </h1>
-              <p
-                className="contact-header-detail-text subTitle"
-                style={{ color: theme.secondaryText }}
-              >
-                {ContactData["description"]}
-              </p>
-              <SocialMedia />
-              <br />
-              <br />
-              <a {...styles} className="general-btn" href={greeting.resumeLink}>
-                See my Resume
-              </a>
-            </div>
-          </div>
+      <div className="about">
           <div className="blog-heading-div">
             <div className="blog-heading-text-div">
               <h1 className="blog-heading-text" style={{ color: theme.text }}>
@@ -76,7 +45,7 @@ function Contact(props) {
           </div>
       </div>
       <Footer theme={props.theme} onToggle={props.onToggle} />
-    </div>
+    </>
   );
 }
 

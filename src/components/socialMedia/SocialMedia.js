@@ -1,10 +1,11 @@
 import React from "react";
 import "./SocialMedia.css";
 import { socialMediaLinks } from "../../portfolio";
+import { Divider } from "@mui/material";
 
 export default function socialMedia() {
   return (
-    <div className="social-media-div">
+    <>
       <a
         href={socialMediaLinks.github}
         className="icon-button github"
@@ -12,8 +13,14 @@ export default function socialMedia() {
         rel="noopener noreferrer"
       >
         <i className="fab fa-github"></i>
-        <span></span>
+        
       </a>
+      <Divider orientation="vertical" variant="middle" flexItem 
+        sx = {{
+          width: 2,
+          backgroundColor: '#868e96'
+        }}
+      />
       <a
         href={socialMediaLinks.linkedin}
         className="icon-button linkedin"
@@ -21,8 +28,13 @@ export default function socialMedia() {
         rel="noopener noreferrer"
       >
         <i className="fab fa-linkedin-in"></i>
-        <span></span>
       </a>
+      <Divider orientation="vertical" variant="middle" flexItem 
+        sx = {{
+          width: 2,
+          backgroundColor: '#868e96'
+        }}
+      />
       <a
         href={`mailto:${socialMediaLinks.gmail}`}
         className="icon-button google"
@@ -30,8 +42,7 @@ export default function socialMedia() {
         rel="noopener noreferrer"
       >
         <i className="far fa-envelope"></i>
-        <span></span>
       </a>
-    </div>
+    </>
   );
 }
