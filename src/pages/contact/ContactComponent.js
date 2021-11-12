@@ -1,7 +1,4 @@
 import React from "react";
-import Header from "../../components/header/Header";
-import Footer from "../../components/footer/Footer";
-import BlogsImg from "./BlogsImg";
 import "./ContactComponent.css";
 import { contactPageData } from "../../portfolio.js";
 import { style } from "glamor";
@@ -19,8 +16,6 @@ function Contact(props) {
   });
 
   return (
-    <>
-      <Header theme={theme} setTheme={props.setTheme} />
       <div className="about">
           <div className="blog-heading-div">
             <div className="blog-heading-text-div">
@@ -39,13 +34,8 @@ function Contact(props) {
                 </a>
               </div>
             </div>
-            <div className="blog-heading-img-div">
-              <BlogsImg theme={theme} />
-            </div>
           </div>
       </div>
-      <Footer theme={props.theme} onToggle={props.onToggle} />
-    </>
   );
 }
 
