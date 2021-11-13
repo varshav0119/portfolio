@@ -1,45 +1,41 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import { Route, Switch } from "react-router-dom";
+import CssBaseline from "@material-ui/core/CssBaseline";
+import Home from "./components";
+import Resume from "./components/Resume";
+import Navbar from "./components/Navbar";
+import Portfolio from "./components/Portfolio";
+import Contact from "./components/Contact";
+import { makeStyles } from "@material-ui/core/styles";
 import "./App.css";
-import Main from "./containers/Main";
-import { ThemeProvider } from "styled-components";
-import { themes } from "./theme";
-import { GlobalStyles } from "./global";
-import { CursorProvider } from "react-cursor-custom";
-import { settings } from "./portfolio";
-import ReactGA from "react-ga";
+import Footer from "./components/Footer";
+
+const useStyles = makeStyles((theme) => ({
+  main: {
+    marginTop: '2%',
+    margin: '5% 20%',
+    [theme.breakpoints.between('xs', 'sm')]: {
+      margin: '5% 5%'
+    }
+  }
+}))
 
 function App() {
-  useEffect(() => {
-    if (settings.googleTrackingID) {
-      ReactGA.initialize(settings.googleTrackingID, {
-        testMode: process.env.NODE_ENV === "test",
-      });
-      ReactGA.pageview(window.location.pathname + window.location.search);
-    }
-  }, []);
-
-  const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
-  const useCursor = settings.useCustomCursor;
-
+  const classes = useStyles();
   return (
-    <ThemeProvider theme={themes[theme]}>
-      <>
-        <GlobalStyles />
-        <div>
-          {useCursor ? (
-            <CursorProvider
-              color={themes[theme].secondaryText}
-              ringSize={25}
-              transitionTime={75}
-            >
-              <Main theme={themes[theme]} setTheme={setTheme} />
-            </CursorProvider>
-          ) : (
-            <Main theme={themes[theme]} setTheme={setTheme} />
-          )}
-        </div>
-      </>
-    </ThemeProvider>
+    <React.Fragment>
+      <CssBaseline />
+      <div className={classes.main}>
+        <Navbar/>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/portfolio" component={Portfolio} />
+          <Route exact path="/resume" component={Resume} />
+          <Route exact path="/about" component={Contact} />
+        </Switch>
+        <Footer/>
+      </div>
+    </React.Fragment>
   );
 }
 

@@ -1,64 +1,64 @@
-# PortfolioV2
+## Material UI Portfolio
 
-![PortfolioV2](/images/portfolio1.gif)
+A portfolio single page application using React and Material UI
 
-### A clean portfolio template. (Readme will be updated soon)
+### Demo of this site available here [Material-UI-Portfolio Demo](https://materialui-portfolio.netlify.app/)
 
-# Sections
+#### Installing
 
-- Home
-- Education and Certificates
-- Experience
-- Projects
-- Contact and Resume
+Clone the repository using following command or download
 
-# How To Use
+```
+git clone https://github.com/devmahmud/material-ui-portfolio.git
+```
 
-- Clone this repository (or fork, then clone your fork :) )
-- Run `npm i`
-- Check it out using `npm start`
+#### To install dependency
 
-# How Do I Customize
+```
+npm install
+```
 
-- Replace `homepage` in package.json to your domain name or `https://<username>.github.io`
-- In `src/portfolio.js` you can add your personal portfolio details.
-- In `src/theme.js` you can change the theme colors. You can change between Light and Dark theme with the theme switch on the header.
+#### To start the server
 
-# How to Deploy
+```
+npm start
+```
 
-- Once you are done with your setup and have successfully completed all steps above, you need to put your website online!
-- I highly recommend using [Github Pages](https://create-react-app.dev/docs/deployment/#github-pages) to achieve this the EASIEST WAY.
-- To deploy your website, you have two options. First you need to create a github repository with the name `<your-github-username>.github.io`. Please don't give it any other name.
-- Now, you need to generate a production build and deploy the website.
+#### For Production Build
 
-**Option 1:**
+```
+npm run build
+```
 
-- Run `npm run build` to generate the production build folder.
-- Enter the build folder, `git init` and push the generated code to the `master` branch of your new repository. That's it. Done.
-  You may need to `git init` and force push at every new build.
+Server will be available at http://127.0.0.1:3000 in your browser
 
-**Option 2 (will not work with [user pages](https://docs.github.com/en/github/working-with-github-pages/about-github-pages)):**
+# Project snapshot
 
-- Run `npm run deploy` to build and create a branch called `gh-pages`. It will push the `build` files to that branch.
-- The last step in deploying is to enable `Github Pages` in settings of the repository and select `gh-pages` branch.
+## Home page
 
-Now, your website is successfully deployed and you can visit it at `<your-github-username>.github.io`.  
+![image](https://user-images.githubusercontent.com/19981097/86140838-218ec980-bb13-11ea-87c5-504d68c8d2a4.png)
 
+## Sidebar
 
-# Technologies used 🛠️
+![image](https://user-images.githubusercontent.com/19981097/86140963-4aaf5a00-bb13-11ea-854e-012077dd6101.png)
 
-- [React](https://reactjs.org/)
-- [graphql](https://graphql.org/)
-- [apollo-boost](https://www.apollographql.com/docs/react/get-started/)
-- [baseui](https://github.com/uber/baseweb)
-- [react-reveal](https://www.react-reveal.com/)
-- [styled-components](https://styled-components.com/)
+## Resume
 
-# illustrations 🍥
+![image](https://user-images.githubusercontent.com/19981097/86141072-6fa3cd00-bb13-11ea-98d4-459d59af8a15.png)
 
-- [UnDraw](https://undraw.co/illustrations)
+## Portfolio
 
-# References
+![image](https://user-images.githubusercontent.com/19981097/86141235-9f52d500-bb13-11ea-9d7b-44b982a6fd3f.png)
 
-Based on https://github.com/ashutosh1919/masterPortfolio/ and https://github.com/saadpasta/developerFolio
-Illustrations: https://undraw.co/
+## Contact
+
+![image](https://user-images.githubusercontent.com/19981097/86141330-bf829400-bb13-11ea-9070-ecd62027078f.png)
+
+## Author
+
+<blockquote>
+Mahmudul alam
+Email: expelmahmud@gmail.com
+</blockquote>
+
+========Thank You !!!=========
