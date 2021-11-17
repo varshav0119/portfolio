@@ -28,30 +28,23 @@ const useStyles = makeStyles((theme) => ({
     flexFlow: 'row wrap',
     alignItems: 'center'
   },
-  about: {
-    width: '50%',
-    padding: '2%'
-  },
-  projectImageHalf: {
-    width: '50%'
-  },
-  projectImageFull: {
-    width: '100%'
+  projectAbout: {
+    width: '45%',
+    marginRight: '5%'
   },
   projectTitle: {
     fontFamily: 'Raleway',
     fontSize: '200%'
   },
-  projectDescription: {
-    fontFamily: 'Open Sans'
+  projectText: {
+    fontFamily: 'Open Sans',
+    textAlign: 'justify'
   },
-  columnDescription: {
-    width: '50%',
-    padding: '5%'
+  projectImageLink: {
+    width: '50%'
   },
-  rowDescription: {
-    width: '100%',
-    padding: '5%'
+  projectImage: {
+    width: '100%'
   }
 }));
 
@@ -60,44 +53,50 @@ const Portfolio = () => {
   const projects = [
     {
       title: "AryaBota",
-      description: <>
-        AryaBota is a <b>tolerant gradual programming environment</b> designed to 
-        teach programming basics to children of ages 10-15. Drawing from latest research, and other successful
-        applications in this area, the team developed this prototype to make use of
-        <ul>
-          <li>
-            a visual component: AryaBota is a robot in a grid that responds to textual commands, and children attempt to
-            solve challenges to learn programming concepts
-          </li>
-          <li>
-            gradual programming: At first, children can use commands resembling English, so the cognitive load of
-            memorizing opaque syntax is reduced; after understanding a concept, they can be taught the 
-            corresponding <b>Python</b> syntax and this PYthon syntax can then be used to control the robot
-          </li>
-        </ul>
-        The prototype is being tested through workshops conducted for school children, and the team is collecting feedback 
-        and usage metrics, based on which we hope to improve our application.<br/>
-        Our research and initial findings have been submitted to a global conference, and the abstract was approved. The
-        paper is currently under review for publication.
-      </>,
-      image: <img 
-        className={classes.projectImageHalf}
-        src={require("../images/aryabota-home.png")}
-        alt={""}
-      />      
+      description: <div className={classes.projectText}>
+          AryaBota is a <b>tolerant gradual programming environment</b> designed to 
+          teach programming basics to children of ages 10-15. Drawing from latest research, and other successful
+          applications in this area, the team developed this prototype to make use of
+          <ul>
+            <li>
+              a visual component: AryaBota is a robot in a grid that responds to textual commands, and children attempt to
+              solve challenges to learn programming concepts
+            </li>
+            <li>
+              gradual programming: At first, children can use commands resembling English, so the cognitive load of
+              memorizing opaque syntax is reduced; after understanding a concept, they can be taught the 
+              corresponding <b>Python</b> syntax and this PYthon syntax can then be used to control the robot
+            </li>
+          </ul>
+          The prototype is being tested through workshops conducted for school children, and the team is collecting feedback 
+          and usage metrics, based on which we hope to improve our application.<br/>
+          Our research and initial findings have been submitted to a global conference, and the abstract was approved. The
+          paper is currently under review for publication.
+        </div>,
+      image: 
+        <a
+          className={classes.projectImageLink}
+          href="https://aryabota-docs.notion.site/AryaBota-316098bf36fc4cef9aeb8ef884a8c2d3"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            className={classes.projectImage}
+            src={require("../images/aryabota-home.png")}
+            alt={"AryaBota Report"}
+          />  
+        </a>    
     }
   ]
   const cardContent = (project) => {
     return (
       <Card className={classes.projectCard}>
         <CardContent className={classes.projectCardContent}>
-          <div className={classes.about}>
+          <div className={classes.projectAbout}>
             <div className={classes.projectTitle}>
               {project.title}
             </div>
-            <div className={classes.projectDescription}>
-              {project.description}
-            </div>
+            {project.description}
           </div>
           {project.image}
         </CardContent>
