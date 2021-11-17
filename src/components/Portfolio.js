@@ -2,7 +2,6 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Box from "@material-ui/core/Box";
 import Grid from "@material-ui/core/Grid";
-import '@brainhubeu/react-carousel/lib/style.css';
 import { Card, CardContent } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
