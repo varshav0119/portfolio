@@ -20,13 +20,14 @@ const useStyles = makeStyles((theme) => ({
   }
 }))
 
-function App() {
+function App(props) {
   const classes = useStyles();
+  // const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
   return (
     <React.Fragment>
       <CssBaseline />
       <div className={classes.main}>
-        <Navbar/>
+        <Navbar theme={props.theme}/>
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/portfolio" component={Portfolio} />
