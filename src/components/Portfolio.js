@@ -83,6 +83,7 @@ const Portfolio = () => {
       image: <img 
         className={classes.projectImageHalf}
         src={require("../images/aryabota-home.png")}
+        alt={""}
       />      
     }
   ]
