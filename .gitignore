@@ -56,6 +56,10 @@ typings/
 
 # gatsby files
 .cache/
+<<<<<<< HEAD
+=======
+public
+>>>>>>> Adding new template
 
 # Mac files
 .DS_Store
@@ -66,6 +70,9 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
+<<<<<<< HEAD
 
 # Misc
 **/*githook*
+=======
+>>>>>>> Adding new template
