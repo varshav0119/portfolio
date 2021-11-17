@@ -64,15 +64,17 @@ const menuItems = [
   {  listText: 'About', listPath: '/about' },
 ];
 
-const Navbar = () => {
+const Navbar = (props) => {
 
   const [currTheme, setCurrTheme] = useState('light');
 
   function changeTheme() {
     if (currTheme === 'light') {
+      props.theme = 'dark'
       localStorage.setItem('theme', 'dark');
       setCurrTheme('dark');
     } else {
+      props.theme = 'light'
       localStorage.setItem('theme', 'light');
       setCurrTheme('light');
     }
