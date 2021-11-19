@@ -1,13 +1,24 @@
 import React from "react"
+import CardCustom from "./atoms/CardCustom"
 import data from "../yourdata"
 
 const Promotion = () => {
   return (
-    <div className="section">
+    <div className="section" id="hobbyprojects">
       <div className="container">
         <div className="promotion-container">
             <h1>{data.promotionHeading}</h1>
-          <p>{data.promotionPara}</p>
+            <div className="grid">
+              {data.projects.map((project, index) => (
+                <CardCustom
+                  key={index}
+                  heading={project.title}
+                  paragraph={project.para}
+                  imgUrl={project.imageSrc}
+                  projectLink={project.url}
+                ></CardCustom>
+              ))}
+          </div>
         </div>
       </div>
     </div>

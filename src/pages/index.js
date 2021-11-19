@@ -6,19 +6,29 @@ import SEO from "../components/seo"
 import Header from "../components/Header"
 import Work from "../components/Work"
 import About from "../components/about"
-import Skills from "../components/skills"
 import Promotion from "../components/Promotion"
 import Footer from "../components/Footer"
+import { ThemeProvider, createTheme } from "@mui/material"
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#000000',
+      contrastText: '#fff',
+    }
+  },
+});
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Portfolio Template" />
-    <Header></Header>
-    <Work></Work>
-    <About></About>
-    <Skills></Skills>
-    <Promotion></Promotion>
-    <Footer></Footer>
+    <ThemeProvider theme={theme}>
+      <Header></Header>
+      <Work></Work>
+      <Promotion></Promotion>
+      <About></About>
+      <Footer></Footer>
+    </ThemeProvider>
   </Layout>
 )
 
