@@ -1,6 +1,5 @@
 import React from "react"
 import CardCustom from "./atoms/CardCustom"
-
 import data from "../yourdata"
 
 const Work = () => {
