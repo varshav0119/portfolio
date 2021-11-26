@@ -9,7 +9,7 @@ const Promotion = () => {
         <div className="promotion-container">
             <h1>{data.promotionHeading}</h1>
             <div className="grid">
-              {data.projects.map((project, index) => (
+              {data.hobby.map((project, index) => (
                 <CardCustom
                   key={index}
                   heading={project.title}
