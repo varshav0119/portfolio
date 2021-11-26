@@ -9,10 +9,10 @@ export default {
     {
       title: "AryaBota",
       para:
-        "An interactive gradual programming environment designed to introduce children to programming in Python",
+        "A teaching tool to introduce children to programming, that combines aspects of visual and gradual programming environments to reduce syntax barriers and teach Python basics",
       imageSrc:
         "aryabota.gif",
-      url: "https://tundra-organ-974.notion.site/AryaBota-c8c985bdce3a4e4191c6f5859bb98191",
+      url: "https://varshav0119.notion.site/AryaBota-c8c985bdce3a4e4191c6f5859bb98191",
     },
     {
       title: "Project Two", //Project Title - Add Your Project Title Here
@@ -21,7 +21,7 @@ export default {
       //Project Image - Add Your Project Image Here
       imageSrc: "aryabota-home.png",
         //Project URL - Add Your Project Url Here
-      url: "http://chetanverma.com/",
+      url: "http://notion.so",
     },
     {
       title: "Project Three", //Project Title - Add Your Project Title Here
@@ -29,8 +29,37 @@ export default {
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.", // Add Your Service Type Here
       //Project Image - Add Your Project Image Here
       imageSrc: "aryabota-home.png",
-      url: "http://chetanverma.com/",
+      url: "http://notion.so",
     }
+  ],
+
+  hobby: [
+    {
+      title: "Notion-Discord Book Recommendations Bot",
+      para:
+        "An open source project, fuelled by my love for Notion, Discord and books!",
+      imageSrc:
+        "bookrecs.png",
+      url: "https://varshav0119.notion.site/Making-a-Discord-bot-that-talks-to-Notion-00954f62598943898e5829081e19e2fd",
+    },
+    {
+      title: "Project Two", //Project Title - Add Your Project Title Here
+      para:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.", // Add Your Service Type Here
+      //Project Image - Add Your Project Image Here
+      imageSrc: "aryabota-home.png",
+        //Project URL - Add Your Project Url Here
+      url: "http://notion.so",
+    },
+    {
+      title: "Project Three", //Project Title - Add Your Project Title Here
+      para:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.", // Add Your Service Type Here
+      //Project Image - Add Your Project Image Here
+      imageSrc: "aryabota-home.png",
+      url: "http://notion.so",
+    }
+
   ],
 
   // End Work Section -----------------------
