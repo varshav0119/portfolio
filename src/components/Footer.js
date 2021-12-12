@@ -28,7 +28,7 @@ const Footer = () => {
             </a>
             <span className="dash"> - </span>
             <a className="footer-item-half"
-              href="https://www.linkedin.com/in/varsha-venkatasubramanian-717913157/"
+              href="https://www.linkedin.com/in/varsha-venkatasubramanian/"
               target="_blank"
               rel="noopener noreferrer"
             >

@@ -15,6 +15,7 @@ const Navbar = () => {
           <div className="links-wrapper">
             <button onClick={() => scrollTo("#work")}>Work</button>
             <button onClick={() => scrollTo('#hobbyprojects')}>Hobby Projects</button>
+            <button onClick={() => window.open("https://drive.google.com/file/d/1z24cQnJfrdL13Qxo5clQ6en3RhfkwgO4/view?usp=sharing", "_blank")}>Resume</button>
             <button onClick={() => scrollTo("#about")}>About</button>
           </div>
         </div>
