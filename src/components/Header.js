@@ -41,19 +41,11 @@ const Header = () => {
             </div> */}
             <a
               className="resume-link"
-              href="https://notion.so"
+              href="https://drive.google.com/file/d/1ZgAHKir_uZJaY5flyJXI-_twCYxEe30x/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
             >
-              <span>Download Resume</span>
-              <span>
-                <FontAwesomeIcon 
-                  icon={faArrowCircleDown}
-                  style={{
-                    marginLeft: '30%'
-                  }}
-                />
-              </span>
+              <span>View Resume</span>
             </a>
             <div className="contact-icons">
               <IconButton

@@ -11,25 +11,25 @@ export default {
       para:
         "A teaching tool to introduce children to programming, that combines aspects of visual and gradual programming environments to reduce syntax barriers and teach Python basics",
       imageSrc:
-        "aryabota.gif",
+        "aryabota-home.png",
       url: "https://varshav0119.notion.site/AryaBota-c8c985bdce3a4e4191c6f5859bb98191",
     },
     {
-      title: "Project Two", //Project Title - Add Your Project Title Here
+      title: "Cafeteria Food Wastage Reduction", //Project Title - Add Your Project Title Here
       para:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.", // Add Your Service Type Here
+        "A real-world problem solved during my internship at Mu Sigma, using a design thinking approach and decision science technology.", // Add Your Service Type Here
       //Project Image - Add Your Project Image Here
       imageSrc: "aryabota-home.png",
         //Project URL - Add Your Project Url Here
-      url: "http://notion.so",
+      url: "https://github.com/varshav0119/Cafeteria-Food-Wastage-Reduction",
     },
     {
-      title: "Project Three", //Project Title - Add Your Project Title Here
+      title: "Work at Project Sitara Foundation", //Project Title - Add Your Project Title Here
       para:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.", // Add Your Service Type Here
+        "Work done in the field of STEM and co-curricular education for children from underserved communities, using tools in EdTech to create accessible learning experiences.", // Add Your Service Type Here
       //Project Image - Add Your Project Image Here
-      imageSrc: "aryabota-home.png",
-      url: "http://notion.so",
+      imageSrc: "sitara.png",
+      url: "https://varshav0119.notion.site/Volunteering-at-Project-Sitara-Foundation-bafb0d669d2d4047bd87cbfbd7235d6a",
     }
   ],
 
