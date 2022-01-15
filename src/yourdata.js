@@ -24,17 +24,16 @@ export default {
       url: "https://github.com/varshav0119/Cafeteria-Food-Wastage-Reduction",
     },
     {
-      title: "EdTech at Project Sitara Foundation", //Project Title - Add Your Project Title Here
+      title: "EdTech at Project Sitara Foundation",
       para:
-        "Work done in the field of STEM and co-curricular education for children from underserved communities, using tools in EdTech to create accessible learning experiences.", // Add Your Service Type Here
-      //Project Image - Add Your Project Image Here
+        "A summary of my work in the field of education for children from underserved communities, using EdTech and gamification to create accessible learning experiences.",
       imageSrc: "sitara.png",
       url: "https://varshav0119.notion.site/Volunteering-at-Project-Sitara-Foundation-bafb0d669d2d4047bd87cbfbd7235d6a",
     },
     {
       title: "Notion-Discord Book Recommendations", //Project Title - Add Your Project Title Here
       para:
-        "My appreciation of Notion, Discord and reading all came together in this Open Source project, in which I created a Discord bot that talks to Notion to store and organise book recommendations.", // Add Your Service Type Here
+        "An Open Source project that brought together my appreciation of Notion, Discord and reading books!", // Add Your Service Type Here
       //Project Image - Add Your Project Image Here
       imageSrc: "notion-discord.png",
       url: "https://github.com/varshav0119/notion-discord-book-recommendations",
