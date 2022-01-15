@@ -1,8 +1,20 @@
 .content {
     padding: 10px;
     .header {
-        font-size: 20px;
+        font-size: 1.2rem;
         font-family: 'Raleway';
+        @include media(">=phone", "<lgphone") {
+            font-size: 1rem;
+            line-height: 20px;
+          }
+          @include media(">=lgphone", "<tablet") {
+            font-size: 1rem;
+            line-height: 20px;
+          }
+          @include media(">=tablet", "<desktop") {
+            font-size: 1.2rem;
+            line-height: 22px;
+          }
     }
     p {
         font-size: 16px;

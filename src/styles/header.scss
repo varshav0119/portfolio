@@ -10,7 +10,16 @@
     text-decoration: none;
     color: #1D7874;
     span {
-      font-size: 22px;
+      font-size: 1.5rem;
+      @include media(">=phone", "<lgphone") {
+        font-size: 1rem;
+      }
+      @include media(">=lgphone", "<tablet") {
+        font-size: 1rem;
+      }
+      @include media(">=tablet", "<desktop") {
+        font-size: 1.5rem;
+      }
     }
   }
   .resume-link:hover {

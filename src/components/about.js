@@ -3,11 +3,11 @@ import data from "../yourdata"
 
 const About = () => {
   return (
-    <div className="secion" id="about">
+    <div className="section" id="about">
       <div className="container">
+        <h1>About Me</h1>
         <div className="about-section">
           <div className="content">
-            <h1>About Me</h1>
             <p>
               {data.aboutParaOne}
               <br></br>
