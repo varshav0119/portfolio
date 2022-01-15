@@ -24,7 +24,7 @@ export default {
       url: "https://github.com/varshav0119/Cafeteria-Food-Wastage-Reduction",
     },
     {
-      title: "Project Sitara Foundation", //Project Title - Add Your Project Title Here
+      title: "EdTech at Project Sitara Foundation", //Project Title - Add Your Project Title Here
       para:
         "Work done in the field of STEM and co-curricular education for children from underserved communities, using tools in EdTech to create accessible learning experiences.", // Add Your Service Type Here
       //Project Image - Add Your Project Image Here
@@ -47,9 +47,9 @@ export default {
   aboutParaOne:
     "I graduated from PES University in 2020, with a Bachelor's in Technology, Computer Science and Engineering. Since then, I have been working as a software engineer at Intuit.",
   aboutParaTwo:
-    "I like to try new things. ",
+    "I like learning new things, be it games, languages or processes. I structure my thoughts through endless conversations with other people and myself. ",
   aboutParaThree:
-    "It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    "My passion for education led me to Project Sitara Foundation, where I am a member of the core team. Working at Sitara fuels my enthusiasm for people, design and technology every day.",
 
   //   End About Section ---------------------
 

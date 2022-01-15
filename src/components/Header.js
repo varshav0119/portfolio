@@ -66,7 +66,7 @@ const Header = () => {
               <IconButton
                 aria-label="email"
                 color="primary"
-                href="https://www.linkedin.com/in/varsha-venkatasubramanian-717913157/"
+                href="https://www.linkedin.com/in/varsha-venkatasubramanian/"
                 target="_blank"
               >
                 <FontAwesomeIcon icon={faLinkedinIn}/>
