@@ -6,7 +6,6 @@ import SEO from "../components/seo"
 import Header from "../components/Header"
 import Work from "../components/Work"
 import About from "../components/about"
-import Promotion from "../components/Promotion"
 import Footer from "../components/Footer"
 import { ThemeProvider, createTheme } from "@mui/material"
 
@@ -25,7 +24,6 @@ const IndexPage = () => (
     <ThemeProvider theme={theme}>
       <Header></Header>
       <Work></Work>
-      <Promotion></Promotion>
       <About></About>
       <Footer></Footer>
     </ThemeProvider>

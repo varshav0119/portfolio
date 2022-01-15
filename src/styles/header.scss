@@ -1,38 +1,6 @@
 .header-wrapper {
   width: 80vw;
-  // display: flex;
-  // flex-flow: row wrap;
-  // justify-content: center;
-  // align-items: center;
-
-  // @include media(">=phone", "<lgphone") {
-  //   flex-direction: column;
-  //   justify-content: center;
-  // }
-
-  // @include media(">=lgphone", "<tablet") {
-  //   flex-direction: column;
-  //   justify-content: center;
-  // }
-
-  // .image-wrapper {
-  //   display: none;
-  //   width: 40%;
-
-  //   @include media(">=phone", "<lgphone") {
-  //     width: 100%;
-  //   }
-    
-  //   @include media(">=lgphone", "<tablet") {
-  //     width: 100%;
-  //   }
-
-  //   .about-image {
-  //     width: 100%;
-  //     border-radius: 4%;
-  //   }
-  // }
-
+  
   .resume-link {
     display: flex;
     flex-flow: row wrap;
