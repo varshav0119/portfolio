@@ -20,7 +20,7 @@ const theme = createTheme({
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Portfolio Template" />
+    <SEO title="Varsha" />
     <ThemeProvider theme={theme}>
       <Header></Header>
       <Work></Work>
