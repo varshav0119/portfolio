@@ -9,7 +9,7 @@ export default {
     {
       title: "AryaBota",
       para:
-        "A teaching tool to introduce children to programming, that combines aspects of visual and gradual programming environments to reduce syntax barriers and teach Python basics.",
+        "A teaching tool to introduce children to programming, that combines aspects of visual and gradual programming environments to reduce syntax barriers and teach Python basics; Research paper detailing this work has been accepted at IEEE EduCon 2022",
       imageSrc:
         "ab.png",
       url: "https://varshav0119.notion.site/AryaBota-c8c985bdce3a4e4191c6f5859bb98191",
@@ -17,7 +17,7 @@ export default {
     {
       title: "Cafeteria Food Wastage Reduction", //Project Title - Add Your Project Title Here
       para:
-        "A real-world problem solved during my internship at Mu Sigma, using a design thinking approach and decision science technology.", // Add Your Service Type Here
+        "A real-world problem solved during my internship at Mu Sigma, using a design thinking approach and decision science technology", // Add Your Service Type Here
       //Project Image - Add Your Project Image Here
       imageSrc: "graphs.png",
         //Project URL - Add Your Project Url Here
@@ -26,7 +26,7 @@ export default {
     {
       title: "EdTech at Project Sitara Foundation",
       para:
-        "A summary of my work in the field of education for children from underserved communities, using EdTech and gamification to create accessible learning experiences.",
+        "A summary of my work in the field of education for children from underserved communities, using EdTech and gamification to create accessible learning experiences",
       imageSrc: "sitara.png",
       url: "https://varshav0119.notion.site/Volunteering-at-Project-Sitara-Foundation-bafb0d669d2d4047bd87cbfbd7235d6a",
     },
