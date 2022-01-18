@@ -41,7 +41,7 @@ const Header = () => {
             </div> */}
             <a
               className="resume-link"
-              href="https://github.com/varshav0119/portfolio/blob/main/src/images/resume.pdf"
+              href={require("../images/resume.pdf")}
               target="_blank"
               rel="noreferrer"
             >
