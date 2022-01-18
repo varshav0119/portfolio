@@ -41,7 +41,7 @@ const Header = () => {
             </div> */}
             <a
               className="resume-link"
-              href="https://drive.google.com/file/d/1ZgAHKir_uZJaY5flyJXI-_twCYxEe30x/view?usp=sharing"
+              href="https://github.com/varshav0119/portfolio/blob/main/src/images/resume.pdf"
               target="_blank"
               rel="noreferrer"
             >
