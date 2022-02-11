@@ -33,7 +33,7 @@ export default {
     {
       title: "Notion-Discord Book Recommendations", //Project Title - Add Your Project Title Here
       para:
-        "An Open Source project that brought together my appreciation of Notion, Discord and reading books!", // Add Your Service Type Here
+        "An Open Source, weekend project that brought together my appreciation of Notion, Discord and reading books!", // Add Your Service Type Here
       //Project Image - Add Your Project Image Here
       imageSrc: "notion-discord.png",
       url: "https://github.com/varshav0119/notion-discord-book-recommendations",
@@ -53,5 +53,3 @@ export default {
   //   End About Section ---------------------
 
 }
-
-// Thanks for using this template, I would love to hear from you contact me at hello@chetanverma.com

@@ -60,15 +60,15 @@ h1 {
   }
 
   .about-image {
-    width: 100%;
+    width: 80%;
     @include media(">=phone", "<lgphone") {
-      width: 80%;
+      width: 60%;
     }
     @include media(">=lgphone", "<tablet") {
-      width: 80%;
+      width: 60%;
     }
     @include media(">=tablet", "<desktop") {
-      width: 60%;
+      width: 40%;
     }
   }  
 
